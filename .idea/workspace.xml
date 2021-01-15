@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/myData.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prac.py" beforeDir="false" afterPath="$PROJECT_DIR$/prac.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,10 +26,11 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -84,18 +84,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -114,25 +103,49 @@
       <screen x="63" y="0" width="1303" height="768" />
     </state>
     <state x="417" y="185" key="#com.intellij.fileTypes.FileTypeChooser/63.0.1303.768@63.0.1303.768" timestamp="1609857302789" />
-    <state width="1303" height="194" key="GridCell.Tab.0.bottom" timestamp="1610039383351">
+    <state width="1355" height="236" key="GridCell.Tab.0.bottom" timestamp="1610706359219">
+      <screen x="64" y="0" width="1376" height="900" />
+    </state>
+    <state width="1303" height="194" key="GridCell.Tab.0.bottom/63.0.1303.768@63.0.1303.768" timestamp="1610115898619" />
+    <state width="1355" height="236" key="GridCell.Tab.0.bottom/64.0.1376.900@64.0.1376.900" timestamp="1610706359219" />
+    <state width="1355" height="236" key="GridCell.Tab.0.center" timestamp="1610706359211">
+      <screen x="64" y="0" width="1376" height="900" />
+    </state>
+    <state width="1303" height="194" key="GridCell.Tab.0.center/63.0.1303.768@63.0.1303.768" timestamp="1610115898619" />
+    <state width="1355" height="236" key="GridCell.Tab.0.center/64.0.1376.900@64.0.1376.900" timestamp="1610706359211" />
+    <state width="1355" height="236" key="GridCell.Tab.0.left" timestamp="1610706359211">
+      <screen x="64" y="0" width="1376" height="900" />
+    </state>
+    <state width="1303" height="194" key="GridCell.Tab.0.left/63.0.1303.768@63.0.1303.768" timestamp="1610115898619" />
+    <state width="1355" height="236" key="GridCell.Tab.0.left/64.0.1376.900@64.0.1376.900" timestamp="1610706359211" />
+    <state width="1355" height="236" key="GridCell.Tab.0.right" timestamp="1610706359211">
+      <screen x="64" y="0" width="1376" height="900" />
+    </state>
+    <state width="1303" height="194" key="GridCell.Tab.0.right/63.0.1303.768@63.0.1303.768" timestamp="1610115898619" />
+    <state width="1355" height="236" key="GridCell.Tab.0.right/64.0.1376.900@64.0.1376.900" timestamp="1610706359211" />
+    <state width="1303" height="242" key="GridCell.Tab.1.bottom" timestamp="1610102685016">
       <screen x="63" y="0" width="1303" height="768" />
     </state>
-    <state width="1303" height="194" key="GridCell.Tab.0.bottom/63.0.1303.768@63.0.1303.768" timestamp="1610039383351" />
-    <state width="1303" height="194" key="GridCell.Tab.0.center" timestamp="1610039383351">
+    <state width="1303" height="242" key="GridCell.Tab.1.bottom/63.0.1303.768@63.0.1303.768" timestamp="1610102685016" />
+    <state width="1303" height="242" key="GridCell.Tab.1.center" timestamp="1610102685016">
       <screen x="63" y="0" width="1303" height="768" />
     </state>
-    <state width="1303" height="194" key="GridCell.Tab.0.center/63.0.1303.768@63.0.1303.768" timestamp="1610039383351" />
-    <state width="1303" height="194" key="GridCell.Tab.0.left" timestamp="1610039383351">
+    <state width="1303" height="242" key="GridCell.Tab.1.center/63.0.1303.768@63.0.1303.768" timestamp="1610102685016" />
+    <state width="1303" height="242" key="GridCell.Tab.1.left" timestamp="1610102685016">
       <screen x="63" y="0" width="1303" height="768" />
     </state>
-    <state width="1303" height="194" key="GridCell.Tab.0.left/63.0.1303.768@63.0.1303.768" timestamp="1610039383351" />
-    <state width="1303" height="194" key="GridCell.Tab.0.right" timestamp="1610039383351">
+    <state width="1303" height="242" key="GridCell.Tab.1.left/63.0.1303.768@63.0.1303.768" timestamp="1610102685016" />
+    <state width="1303" height="242" key="GridCell.Tab.1.right" timestamp="1610102685016">
       <screen x="63" y="0" width="1303" height="768" />
     </state>
-    <state width="1303" height="194" key="GridCell.Tab.0.right/63.0.1303.768@63.0.1303.768" timestamp="1610039383351" />
+    <state width="1303" height="242" key="GridCell.Tab.1.right/63.0.1303.768@63.0.1303.768" timestamp="1610102685016" />
     <state x="355" y="98" width="700" height="530" key="recent.locations.popup" timestamp="1610039033298">
       <screen x="63" y="0" width="1303" height="768" />
     </state>
     <state x="355" y="98" width="700" height="530" key="recent.locations.popup/63.0.1303.768@63.0.1303.768" timestamp="1610039033298" />
+    <state x="377" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1610083746518">
+      <screen x="63" y="0" width="1303" height="768" />
+    </state>
+    <state x="377" y="89" width="672" height="678" key="search.everywhere.popup/63.0.1303.768@63.0.1303.768" timestamp="1610083746518" />
   </component>
 </project>

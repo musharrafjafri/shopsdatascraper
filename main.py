@@ -15,17 +15,16 @@ from selenium.webdriver.support import expected_conditions as EC
 
 s_items = input("Enter search keywords: ")
 s_location = input("Enter location: ")
+print("BOT started...")
 
 options = webdriver.ChromeOptions()
-# options.add_argument("--headless")
-options.add_argument('start-maximized')
-options.add_experimental_option("useAutomationExtension", False)
-options.add_experimental_option("excludeSwitches", ["enable-automation"])
+options.add_argument("--headless")
+# options.add_argument('start-maximized')
+# options.add_experimental_option("useAutomationExtension", False)
+# options.add_experimental_option("excludeSwitches", ["enable-automation"])
 driver = webdriver.Chrome(options=options)
-driver.maximize_window()
-
-
-driver = webdriver.Chrome()
+# driver.maximize_window()
+# driver = webdriver.Chrome()
 driver.get("https://www.google.com")
 s_bar = driver.find_element_by_xpath('//*[@id="tsf"]/div[2]/div[1]/div[1]/div/div[2]/input')
 s_bar.send_keys(s_items, ' in ', s_location)
@@ -67,7 +66,7 @@ def get_data_fun():
             if website_link.find_element_by_tag_name('div').text == 'Website':
                 link_flag = True
                 data_dict['Link'].append(website_link.get_attribute('href'))
-                # print(website_link.get_attribute('href'))
+                print(website_link.get_attribute('href'))
 
         if link_flag == False:
             data_dict['Link'].append('Not Found')
@@ -83,8 +82,9 @@ def to_csv_fun():
 
 
 def main():
-    print("This is main function.")
+    # print("This is main function.")
     next_but_flag = True
+    pages_glag = False
     while next_but_flag:
         sleep(2)
         td_list = []
@@ -92,58 +92,21 @@ def main():
         table = driver.find_element_by_class_name('AaVjTc')
         for td in table.find_elements_by_tag_name('td'):
             td_list.append(td.text)
-        print(td_list)
-        if td_list.pop() == 'Next':
-            print("Check Point 1")
+            pages_glag = True
+        # print('Page list', td_list)
+        if pages_glag and td_list.pop() == 'Next':
+            page_no = 1
+            # print("Check Point 1")
             for button in table.find_elements_by_class_name('d6cvqb'):
                 if button.text == 'Next':
-                    print('Check Point 2')
+                    page_no += 1
+                    print("On page # : ", page_no)
+                    # print('Check Point 2')
                     next_but_link = button.find_element_by_tag_name('a').click()
                     break
         else:
             next_but_flag = False
-            print("Check Point 3")
-            # if button.text == '':
-            #     print('None')
-            # elif button.text == 'Next':
-            #     print("next")
-            #     next_but_link = button.find_element_by_tag_name('a')
-            # elif button.text == 'Previous':
-            #     print('previous')
-            # elif button.text != 'Next':
-            #     print('Next end')
-            # if button.text == 'Next':
-            #     # if button.find_element_by_tag_name('a').get_attribute('id') == 'pnnext':
-            #     next_but_flag = True
-            #     next_but_link = button.find_element_by_tag_name('a')
-            #     print('C1')
-            #     break
-            # elif button.text == 'Previous':
-            #     print('This is middle.')
-            #     break
-            # else:
-            #     print('This is a False flag')
-            #     next_but_flag = False
-
-            # if button.text == 'Next' and button.find_element_by_tag_name('a').get_attribute('id') == 'pnnext':
-            #     next_but_flag = True
-            #     next_but_link = button.find_element_by_tag_name('a')
-            #     # button.find_element_by_tag_name('a').click()
-            # elif button.text == 'Previous' and button.find_element_by_tag_name('a').get_attribute('id') == 'pnprev':
-            #     next_but_flag = True
-            #
-            # elif button.text != 'Next' and button.find_element_by_tag_name('a').get_attribute('id') != 'pnnext':
-            #     next_but_flag = False
-            #     print('False')
-
-        # if next_but_flag:
-        #     get_data_fun()
-        #     next_but_link.click()
-        #     sleep(1)
-        # else:
-        #     print('All pages are done. Alhamdulillah!')
-        # sleep(2)
-
+            # print("Check Point 3")
     to_csv_fun()
 
 
